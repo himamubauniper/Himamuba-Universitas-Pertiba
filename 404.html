@@ -1,17 +1,12 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <script>
-      sessionStorage.redirect = location.href;
-      location.replace(
-        location.origin +
-          "/Himamuba-Universitas-Pertiba/" +
-          "?redirect=" +
-          encodeURIComponent(
-            location.pathname + location.search + location.hash,
-          ),
-      );
+      sessionStorage.redirect =
+        location.pathname + location.search + location.hash;
+
+      location.replace("/Himamuba-Universitas-Pertiba/");
     </script>
   </head>
   <body></body>
