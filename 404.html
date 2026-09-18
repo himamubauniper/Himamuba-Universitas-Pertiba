@@ -1,17 +1,22 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <script>
-      sessionStorage.redirect = location.href;
-      location.replace(
-        location.origin +
-          "/Himamuba-Universitas-Pertiba/" +
-          "?redirect=" +
-          encodeURIComponent(
-            location.pathname + location.search + location.hash,
-          ),
-      );
+      const path = window.location.pathname;
+      const repo = "/Himamuba-Universitas-Pertiba";
+
+      if (path.startsWith(repo)) {
+        const route = path.slice(repo.length);
+
+        window.location.replace(
+          repo +
+            "/?/" +
+            route.replace(/^\/+/, "") +
+            window.location.search +
+            window.location.hash,
+        );
+      }
     </script>
   </head>
   <body></body>
