@@ -14,7 +14,7 @@ export default function About() {
         <div className="grid gap-6 md:grid-cols-3">
           {/* Instagram */}
           <a
-            href="https://instagram.com/"
+            href="https://instagram.com/himamuba.id"
             target="_blank"
             rel="noreferrer"
             className="group rounded-2xl bg-pink-100 p-8 text-center text-pink-600 transition hover:-translate-y-1 hover:shadow-lg"
@@ -48,7 +48,7 @@ export default function About() {
 
           {/* WhatsApp */}
           <a
-            href="https://wa.me/"
+            href="https://wa.me/085142196325"
             target="_blank"
             rel="noreferrer"
             className="group rounded-2xl bg-green-100 p-8 text-center text-green-600 transition hover:-translate-y-1 hover:shadow-lg"
@@ -75,7 +75,7 @@ export default function About() {
 
           {/* Email */}
           <a
-            href="mailto:email@contoh.com"
+            href="mailto:himamubauniper@gmail.com"
             className="group rounded-2xl bg-blue-100 p-8 text-center text-blue-600 transition hover:-translate-y-1 hover:shadow-lg"
           >
             <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-200">
