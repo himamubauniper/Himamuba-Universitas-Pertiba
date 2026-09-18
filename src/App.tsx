@@ -9,7 +9,7 @@ import NewsDetail from "./pages/NewsDetail";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Himamuba-Universitas-Pertiba/">
       <Navbar />
 
       <Routes>

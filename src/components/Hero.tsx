@@ -1,25 +1,30 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import hima4 from "../pic/hima4.jpeg";
+import hima18 from "../pic/hima18.jpeg";
+import hima1 from "../pic/hima1.jpeg";
+import hima15 from "../pic/hima15.jpeg";
 
 const photos = [
   {
-    image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1",
+    image: hima4,
     title: "Ruang Berkarya",
     description:
       "Tempat mahasiswa mengembangkan potensi, kreativitas, dan pengalaman berorganisasi.",
   },
   {
-    image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac",
+    image: hima18,
     title: "Bersama Membangun Organisasi",
     description: "Membangun kebersamaan dan kolaborasi antar mahasiswa.",
   },
   {
-    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87",
+    image: hima1,
     title: "Kegiatan Mahasiswa",
     description:
       "Berbagai kegiatan mahasiswa untuk menambah pengalaman dan wawasan.",
   },
   {
-    image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644",
+    image: hima15,
     title: "Generasi Aktif",
     description:
       "Mendorong mahasiswa untuk aktif berkontribusi di lingkungan kampus.",
@@ -37,7 +42,7 @@ export default function Hero() {
         {/* Konten */}
         <div>
           <p className="text-primary mb-3 font-semibold tracking-widest uppercase">
-            HIMA UNIPER
+            HIMAMUBA UNIVERSITAS PERTIBA
           </p>
 
           <h1 className="text-5xl leading-tight font-bold lg:text-6xl">
@@ -49,13 +54,13 @@ export default function Hero() {
           </p>
 
           <div className="mt-8 flex gap-3">
-            <a href="/berita" className="btn btn-primary">
+            <Link to="/berita" className="btn btn-primary">
               Lihat Berita
-            </a>
+            </Link>
 
-            <a href="/tentang" className="btn btn-outline">
+            <Link to="/tentang" className="btn btn-outline">
               Tentang Kami
-            </a>
+            </Link>
           </div>
         </div>
 

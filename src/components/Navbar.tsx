@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Navbar() {
   return (
     <div className="navbar bg-base-100 shadow-sm">
@@ -12,44 +14,44 @@ export default function Navbar() {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a href="/">Beranda</a>
+              <Link to="/">Beranda</Link>
             </li>
 
             <li>
-              <a href="/berita">Berita</a>
+              <Link to="/berita">Berita</Link>
             </li>
 
             <li>
-              <a href="/kegiatan">Kegiatan</a>
+              <Link to="/kegiatan">Kegiatan</Link>
             </li>
 
             <li>
-              <a href="/tentang">Tentang</a>
+              <Link to="/tentang">Tentang</Link>
             </li>
           </ul>
         </div>
 
-        <a href="/" className="btn btn-ghost text-xl">
-          HIMA UNIPER
-        </a>
+        <Link to="/" className="btn btn-ghost text-xl">
+          HIMAMUBA UNIVERSITAS PERTIBA
+        </Link>
       </div>
 
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a href="/">Beranda</a>
+            <Link to="/">Beranda</Link>
           </li>
 
           <li>
-            <a href="/berita">Berita</a>
+            <Link to="/berita">Berita</Link>
           </li>
 
           <li>
-            <a href="/kegiatan">Kegiatan</a>
+            <Link to="/kegiatan">Kegiatan</Link>
           </li>
 
           <li>
-            <a href="/tentang">Tentang</a>
+            <Link to="/tentang">Tentang</Link>
           </li>
         </ul>
       </div>
